@@ -1,37 +1,76 @@
-Track your degree progress with a centralized planner designed specifically for UBC students. Every course you add is automatically evaluated against your program requirements, with detailed tracking of completed credits, remaining requirements, and overall progress toward graduation. View your academic journey in a clean, structured interface that makes it easy to understand where you stand at any time.
+# UBC Degree Planner
 
-Plan your academic path with an intuitive term-by-term scheduler. Organize courses across future semesters while ensuring prerequisites and sequencing are handled correctly. The planner helps prevent common mistakes like missing required courses or delaying graduation due to poor planning.
+<p align="center">
+  <i>Plan smarter. Track progress. Graduate on time.</i>
+</p>
 
-Discover what to take next with intelligent recommendations based on your current progress. The system suggests courses that satisfy remaining requirements and helps balance your workload across terms. It also adapts to your choices and keeps your plan flexible.
+## Overview
 
-Stay organized with a clear overview of your degree. See requirement categories such as core courses, electives, and specialization areas, all tracked in real time. Progress updates instantly as you modify your schedule.
+UBC Degree Planner is a centralized academic planning tool designed to simplify how students manage their degree requirements.
 
-Experience a clean and modern interface built for clarity and usability. The planner focuses on simplicity, making complex degree requirements easy to navigate. Every term and requirement is structured in a way that reduces confusion and improves decision-making.
+Instead of manually cross-checking Workday, program pages, and PDFs, students can build structured term schedules, monitor their progress, and understand exactly what remains before graduation.
 
-UBC Degree Planner is built to streamline academic planning while maintaining flexibility and accuracy. Designed specifically around UBC programs, it provides a more relevant and efficient experience than generic planning tools.
+## Features
 
-Tech Stack
+### Degree Tracking
+- Automatically tracks completed, in-progress, and remaining requirements  
+- Real-time updates as courses are added or modified  
+- Supports core, elective, and specialization requirements  
 
-React - Component-based UI framework for building scalable interfaces
-TypeScript - Strongly typed language for reliability and maintainability
-Tailwind CSS - Utility-first styling for rapid UI development
-Vite - Fast build tool and development server
+### Term Planning
+- Build schedules across multiple academic terms  
+- Organize courses while respecting prerequisites and sequencing  
+- Prevents invalid course combinations  
 
-Architecture
+### Progress Visualization
+- Clear overview of credits completed vs remaining  
+- Structured breakdown of degree requirements  
+- Helps ensure on-time graduation  
 
-Component-based design - Modular and reusable UI structure
-State management - Handles course selection, requirements, and progress tracking
-Data modeling - Structured representation of degrees, courses, and term plans
-Validation system - Ensures prerequisites and requirements are satisfied
+### Intelligent Recommendations
+- Suggests courses based on remaining requirements  
+- Helps balance workload across semesters  
+- Reduces planning errors and missed requirements  
 
-Key Technologies
+## User Experience
 
-JavaScript (ES6+)
-TypeScript
-React Hooks
-Responsive web design
+The interface is designed to make complex academic planning simple and intuitive.
 
-Requirements
+- Clean, structured layouts  
+- Minimal navigation for faster workflows  
+- Focus on clarity over complexity  
+- Immediate feedback on changes  
 
-Node.js 18+
-npm or yarn
+## Tech Stack
+
+| Layer        | Technology |
+|--------------|-----------|
+| Frontend     | React |
+| Language     | TypeScript |
+| Styling      | Tailwind CSS |
+| Build Tool   | Vite |
+
+## Architecture
+
+- Component-based UI design  
+- Modular state management  
+- Structured data models for degree requirements  
+- Validation system for prerequisites and credit rules  
+
+## Project Structure
+ubc-degree-planner/
+├── src/
+│ ├── components/ 
+│ ├── pages/ 
+│ ├── models/ 
+│ ├── services/ 
+│ ├── hooks/ 
+│ └── utils/
+├── public/
+└── package.json
+
+## Installation
+git clone https://github.com/dzoulk/Degree-Planner.git
+cd ubc-degree-planner
+npm install
+npm run dev
