@@ -60,14 +60,21 @@ The interface is designed to make complex academic planning simple and intuitive
 ## Project Structure
 ubc-degree-planner/
 ├── src/
-│ ├── components/ 
-│ ├── pages/ 
-│ ├── models/ 
-│ ├── services/ 
-│ ├── hooks/ 
-│ └── utils/
-├── public/
-└── package.json
+│ ├── App/ # Application entry point
+│ ├── Models/ # Data models (Course, DegreeProgram, TermPlan)
+│ ├── ViewModels/ # Business logic (Planner, ProgressTracker)
+│ ├── Views/ # UI components and pages
+│ │ ├── Pages/ # Main screens
+│ │ ├── Modals/ # Modal components
+│ │ └── Components/ # Reusable UI components
+│ ├── Services/ # Core logic (validation, recommendations)
+│ ├── Hooks/ # Custom React hooks
+│ ├── Utilities/ # Helper functions
+│ └── Styles/ # Global styles (Tailwind config)
+│
+├── public/ # Static assets
+├── package.json # Project dependencies
+└── vite.config.ts # Vite configuration
 
 ## Installation
 git clone https://github.com/dzoulk/Degree-Planner.git
